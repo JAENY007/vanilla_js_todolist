@@ -12,6 +12,9 @@
 
 ### 실행하기
 
+[**페이지 바로가기**](https://jaeny007.github.io/vanilla_js_todolist/) <-- 클릭
+<br>
+
 - 페이지가 정상적으로 실행이 되지 않는다면,
 `git clone` 명령어를 통해 repository를 local에 다운받아 주세요!
 
@@ -20,7 +23,7 @@
 1. 입력창에 아무 텍스트나 입력 후 키보드의 `Enter` 버튼이나 `입력` 버튼 클릭
 2. ToDoList가 정상적으로 출력되는지 확인 후 `삭제` 버튼을 이용해 삭제 혹은
 앞의 `CheckBox`를 체크 및 해제하여 할 일의 수행여부를 체크 가능합니다
-1. Data의 송수신은 `SessionStorage`를 통해 동작하므로,
+3. Data의 송수신은 `SessionStorage`를 통해 동작하므로,
 브라우저를 새로고침해도 기록은 남습니다.
 하지만 브라우저를 완전히 종료했다가 접속하면 기록이 초기화 됩니다
 
@@ -28,23 +31,43 @@
 ### 시연 영상
 
 - [x] **`메인화면`**
-<img src="">
+
+<div align="center">
+<img src="./public/images/capture_1.gif" width="200">
+</div>
 <br>
 
 - [x] **`할 일 추가`**
-<img src="">
+<div align="center">
+<img src="./public/images/capture_2.gif" width="200">
+
+input box에 text 입력 후 `Enter`나 `입력버튼` 클릭으로 할 일 목록이 생성됩니다
+</div>
 <br>
 
 - [x] **`완료체크`**
-<img src="">
+<div align="center">
+<img src="./public/images/capture_3.gif" width="200">
+
+`CheckBox`를 클릭하면 텍스트 스타일링에 변화가 생깁니다
+</div>
 <br>
 
 - [x] **`할 일 삭제`**
-<img src="">
+<div align="center">
+<img src="./public/images/capture_4.gif" width="200">
+
+`삭제버튼`을 누르면, 화면 및 sessionStorage에서 데이터가 삭제됩니다
+</div>
 <br>
 
 - [x] **`새로고침 시 반응`**
-<img src="">
+<div align="center">
+<img src="./public/images/capture_5.gif" width="200">
+
+새로고침시 체크박스가 해제되지만, 데이터는 그대로 남아있습니다
+(SessionStorage를 사용했기 때문에)
+</div>
 <br>
 
 ---
