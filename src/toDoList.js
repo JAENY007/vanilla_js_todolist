@@ -17,6 +17,7 @@ const paintToDo = (toDo) => {
   const li = document.createElement("li");
   const input = document.createElement("input");
   input.setAttribute("type", "checkbox");
+  input.addEventListener("click", checkToDo)
   const label = document.createElement("label");
   label.innerHTML = toDo;
   const button = document.createElement("button");
@@ -27,6 +28,15 @@ const paintToDo = (toDo) => {
   li.appendChild(button);
   li.id = toDoList.length + 1;
   whatToDo.appendChild(li);
+}
+
+const checkToDo = (event) => {
+  const label = event.target.nextSibling;
+  if (event.target.checked) {
+    label.setAttribute("class", "checked-label")
+  } else {
+    label.setAttribute("class", "unchecked-label")
+  }
 }
 
 const deleteToDo = (event) => {
