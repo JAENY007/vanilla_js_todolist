@@ -7,7 +7,12 @@
 ---
 ## 구현 설명
 `Vanilla JavaScipt`와 `HTML`, `Sass`로 만드는 To Do List 웹 애플리케이션
+<div align="center">
 
+[![Github Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FJAENY007%2Fvanilla_js_todolist&count_bg=%23CDACF2&title_bg=%23C0B1B1&icon=github.svg&icon_color=%23FFFFFF&title=GitHub%20Hits&edge_flat=false)](https://hits.seeyoufarm.com)
+[![App Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fjaeny007.github.io%2Fvanilla_js_todolist%2F&count_bg=%23FF7575&title_bg=%23C0B1B1&icon=html5.svg&icon_color=%23FFFFFF&title=App%20Hits&edge_flat=false)](https://hits.seeyoufarm.com)
+
+</div>
 
 
 ### 실행하기
