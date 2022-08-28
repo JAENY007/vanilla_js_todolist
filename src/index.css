@@ -1,10 +1,91 @@
 @font-face {
-  font-family: 'EarlyFontDiary';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EarlyFontDiary.woff2')
-    format('woff2');
+  font-family: "EarlyFontDiary";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EarlyFontDiary.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 html {
-  font-family: 'EarlyFontDiary';
+  font-family: "EarlyFontDiary";
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  color: rgb(255, 104, 104);
+  font-size: 40px;
+  font-weight: bold;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section .input-to-do {
+  margin-bottom: 10px;
+}
+section .input-to-do input {
+  padding: 5px;
+  font-size: 16px;
+  font-family: "EarlyFontDiary";
+}
+section .input-to-do input ::-moz-placeholder {
+  text-align: center;
+}
+section .input-to-do input :-ms-input-placeholder {
+  text-align: center;
+}
+section .input-to-do input ::placeholder {
+  text-align: center;
+}
+section .input-to-do button {
+  padding: 5px;
+  font-size: 16px;
+  font-family: "EarlyFontDiary";
+}
+section article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+section article div {
+  width: 100%;
+  height: 100%;
+  min-width: 120px;
+  min-height: 60px;
+  background: rgb(255, 122, 122);
+  border-radius: 10px;
+}
+section article div .what-to-do {
+  width: 100%;
+  padding: 0;
+  list-style-type: none;
+}
+section article div .what-to-do li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+section article div .what-to-do li button {
+  font-family: "EarlyFontDiary";
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer div {
+  font-size: 12px;
 }
