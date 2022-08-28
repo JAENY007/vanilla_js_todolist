@@ -5,18 +5,15 @@
   "main": "./src/index.html",
   "scripts": {
     "start": "npm run lite",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lite": "lite-server",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "lite": "lite-server"
   },
   "author": "JAENY",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "4.0.0",
     "lite-server": "2.6.1",
     "prettier": "2.7.1",
-    "sass": "1.54.5",
-    "gh-pages": "4.0.0"
+    "sass": "1.54.5"
   },
   "homepage": "https://jaeny007.github.io/vanilla_js_todolist"
 }
