@@ -2,9 +2,8 @@
   "name": "todolist_vanilla_js",
   "version": "1.0.0",
   "description": "",
-  "main": "/index.html",
+  "main": "index.html",
   "scripts": {
-    "build": "/src build",
     "start": "npm run lite",
     "lite": "lite-server"
   },
@@ -15,6 +14,5 @@
     "lite-server": "2.6.1",
     "prettier": "2.7.1",
     "sass": "1.54.5"
-  },
-  "homepage": "https://jaeny007.github.io/vanilla_js_todolist"
+  }
 }
