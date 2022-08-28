@@ -1,5 +1,5 @@
 {
   "port": 9090,
   "files": ["./**/*.{html,htm,css,js}"],
-  "server": { "baseDir": "./" }
+  "server": { "baseDir": "/" }
 }

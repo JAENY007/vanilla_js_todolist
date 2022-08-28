@@ -2,7 +2,7 @@
   "name": "todolist_vanilla_js",
   "version": "1.0.0",
   "description": "",
-  "main": "./index.html",
+  "main": "/index.html",
   "scripts": {
     "build": "/src build",
     "start": "npm run lite",
