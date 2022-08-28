@@ -6,13 +6,17 @@
   "scripts": {
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lite": "lite-server"
+    "lite": "lite-server",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "JAENY",
   "license": "ISC",
   "devDependencies": {
     "lite-server": "2.6.1",
     "prettier": "2.7.1",
-    "sass": "1.54.5"
-  }
+    "sass": "1.54.5",
+    "gh-pages": "4.0.0"
+  },
+  "homepage": "https://jaeny007.github.io/vanilla_js_todolist"
 }

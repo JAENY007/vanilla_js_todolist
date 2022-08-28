@@ -1,18 +1,22 @@
-const formToDo = document.querySelector(".input-to-do");
-const inputToDo = formToDo.querySelector("input");
-const whatToDo = document.querySelector(".what-to-do");
-const ToDoList = "toDoList";
+// eventListener를 위한 querySelect
+const FormToDo = document.querySelector(".input-to-do");
+const InputToDo = FormToDo.querySelector("input");
+const WhatToDo = document.querySelector(".what-to-do");
 
+// sessionStorage data key & value
+const ToDoList = "toDoList";
 let toDoList = [];
 
+// create 함수: input의 이벤트처리
 const createToDo = (event) => {
   event.preventDefault();
-  const toDo = inputToDo.value;
+  const toDo = InputToDo.value;
   paintToDo(toDo);
   setToDo(toDo);
-  inputToDo.value = "";
+  InputToDo.value = "";
 };
 
+// paint 함수: 실질적으로 화면에 그리기
 const paintToDo = (toDo) => {
   const li = document.createElement("li");
   const input = document.createElement("input");
@@ -27,9 +31,10 @@ const paintToDo = (toDo) => {
   li.appendChild(label);
   li.appendChild(button);
   li.id = toDoList.length + 1;
-  whatToDo.appendChild(li);
+  WhatToDo.appendChild(li);
 }
 
+// list 내에 checkbox 이벤트 처리: 할일 처리상태 => label text-decoration
 const checkToDo = (event) => {
   const label = event.target.nextSibling;
   if (event.target.checked) {
@@ -39,15 +44,17 @@ const checkToDo = (event) => {
   }
 }
 
+// list 내에 button을 통한 이벤트 처리: parentNode를 이용해 list 삭제 + sessionStorage 최신화
 const deleteToDo = (event) => {
   event.preventDefault();
   const li = event.target.parentNode;
-  whatToDo.removeChild(li);
+  WhatToDo.removeChild(li);
   toDoList = toDoList.filter((toDo) => toDo.id !== Number(li.id));
   sessionStorage.setItem(ToDoList, JSON.stringify(toDoList));
   console.log(toDoList);
 }
 
+// sessionStorage에 데이터가 있을 경우 초기화면에 그려주는 역할
 const getToDo = () => {
   const loaded = sessionStorage.getItem(ToDoList);
   if (loaded !== null) {
@@ -60,6 +67,7 @@ const getToDo = () => {
   }
 }
 
+// sessionStorage에 데이터를 추가하여 새로고침시에도 데이터가 남아있음
 const setToDo = (toDo) => {
   const obj = {
     text: toDo,
@@ -69,9 +77,10 @@ const setToDo = (toDo) => {
   sessionStorage.setItem(ToDoList, JSON.stringify(toDoList));
 }
 
+// 초기화면 및 form 이벤트 처리
 const initToDo = () => {
   getToDo();
-  formToDo.addEventListener("submit", createToDo);
+  FormToDo.addEventListener("submit", createToDo);
 }
 
 initToDo();
